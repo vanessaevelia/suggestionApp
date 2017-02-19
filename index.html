@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AskBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+   <!-- CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- SCRIPT-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.8/angular-route.min.js"></script>
+    <script data-require="angular-animate@*" data-semver="1.5.3" src="https://code.angularjs.org/1.5.3/angular-animate.js"></script>
+
+   <!-- FONT -->
+    <script src="https://use.fontawesome.com/1222ae5941.js"></script>
+    <script src="https://use.typekit.net/aqm3aad.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+</head>
+
+<body ng-app="SuggestionBox">
+
+<div ng-controller="MainController">
+   
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">
+                    <span class="thin">Ask</span>
+                    <span class="script">Box</span>
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li class="active"><a href="#/">My Asks</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                      
+                    <li class="tip"><a href="#/">
+                        {{ userName }}
+                    </a></li>
+                                                     
+                    <li class="tip"><a href="http://vanessaevelia.com" target="_blank">
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav><!-- End of nav -->
+
+    <div class="wrapper">
+        <div class="container-fluid">
+
+            <div class="main">
+                <div ng-view></div>
+            </div>
+
+        </div>
+    </div><!-- End of wrapper -->
+    
+</div>
+   
+    <!-- Modules -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="js/controllers/EntriesController.js"></script>
+    <script type="text/javascript" src="js/controllers/PostsController.js"></script>
+    <script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
+
+    <!-- Services -->
+    <script type="text/javascript" src="js/services/suggestions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+/* 
+Primary: #ec9f05
+Secondary: #f5bb00
+Base: #FFFEFC
+Text: #596157
+Links: #448aaf
+Hover: #bf3100
+Buttons: #ff4e00
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Kavoon';
+
+/****************
+GENERAL
+****************/
+
+body {
+    background-color: #eee;
+}
+
+.wrapper {}
+
+.main {
+    width: 90%;
+    margin: 30px auto 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: #596157;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #ec9f05;
+    text-decoration: none;
+}
+
+.btn-default {
+    color: #448aaf;
+    background: #ffffff;
+}
+
+.btn-default:hover,
+.btn-default:active {
+    color: #ff4e00;
+    background: #ffffff;
+    border: 1px solid #FFCD6B;
+}
+
+.fa-thumbs-up {
+    color: #448aaf;
+    padding: 0 8px;
+}
+
+.fa-thumbs-down {
+    color: #bf3100;
+    padding: 0 8px;
+}
+
+.return {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    background-color: #2a6c9b;
+    left: 0;
+    top: 54px;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.fa-arrow-left {
+    color: #ffffff;
+}
+
+hr {
+    border-color: #f9cc65;
+}
+
+/****************
+MAIN NAVIGATION
+****************/
+
+.navbar {
+    background-color: #FFFEFC;
+    margin: 0;
+}
+
+.navbar-header {
+    padding: 0;
+}
+
+.thin {
+    color: #FFB200;
+    font-family: 'clone-rounded-latin', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.script {
+    color: #FFB200;
+    font-family: 'Kavoon', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: -5px;
+}
+
+.navbar-default .navbar-nav {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.navbar-default .navbar-nav>li {}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 17px;
+    color: #000000;
+    padding-top: 15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ec9f05;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #ffffff;
+    background-color: #FFB200;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #FFB200;
+}
+
+.navbar-default .navbar-nav>.tip>a:hover {
+    color: #ffffff;
+    background-color: #FFB200;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFB200;
+}
+
+
+/****************
+MY ENTRIES
+****************/
+
+.entries {
+    margin: 0 5px 30px 0;
+}
+
+.entry {
+    padding: 7px 0;
+}
+
+.entry-head {
+    height: 10px;
+    background-color: #0083B7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.entry-body {
+    width: 100%;
+    background-color: #FFFEFC;
+    padding: 15px 20px;
+    display: inline-block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.entry-body h4 {
+    float: left;
+}
+
+.category {
+    margin: 0 15px;
+    padding: 2px 4px;
+    background-color: #eee;
+    float: right;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover {
+    -webkit-transform: rotate(360deg);
+    color: #bf3100;
+}
+
+.spin {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.spin:hover {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+
+/****************
+MY POSTS
+****************/
+
+.myEntry {
+    margin: 7px 0 20px;
+    background-color: #FFFEFC;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.myEntry .category {
+    margin: 0;
+    padding: 5px 4px;
+    text-align: center;
+    background-color: #eee;
+    float: none;
+}
+
+.subject {
+    margin: 15px 0;
+}
+
+.subject h3 {
+    line-height: 28px;
+    display: inline;
+}
+
+.submission {
+    float: right;
+    display: inline;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.submission a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.body {
+    display:inline-block;
+}
+
+.post .entry-body h4 {
+    float: none;
+}
+
+
+/****************
+SIDE PANEL
+****************/
+
+
+/* Recommendation Panel */
+
+.rec-panel {
+    margin-top: 7px;
+    border-radius: 5px;
+    background-color: #FFB200;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.getRec {
+    margin: 0 auto;
+    padding: 5px 15px 15px 15px;
+}
+
+.getRec h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.getRec label {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+/* Asks Panel */
+
+.asks-panel {
+    padding: 7px 0 0;
+}
+
+.panel-head {
+    height: 50px;
+    background-color: #FFB200;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.panel-head h3 {
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.panel-body {
+    width: 100%;
+    background-color: #FFFEFC;
+    display: inline-block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.asks-panel .entries {
+    margin: 0;
+}
+
+.asks-panel .entry {
+    padding: 10px 10px 2px 10px;
+    margin: 5px 0;
+    background-color: #596157;
+}
+
+.asks-panel .entry a {
+    color: #ffffff;
+}
+
+.asks-panel .entry .category {
+    margin: 0 0 9px;
+    padding: 0;
+    text-align: center;
+    background-color: #eee;
+    float: none;  
+}
+
+
+/****************
+ANIMATION
+****************/
+
+
+/* FADE */
+
+.fade {
+    transition: 1s linear all;
+    -webkit-transition: 1s linear all;
+    opacity: inherit;
+}
+
+.fade.ng-enter {
+    opacity: 0;
+}
+
+.fade.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.fade.ng-leave {
+    opacity: 1;
+}
+
+.fade.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+
+/****************
+MEDIA QUERIES
+****************/
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    .navbar-header {
+        padding-left: 13px;
+    }
+    .main {
+        width: 100%;
+    }
+    .myEntry,
+    .panel-head,
+    .panel-body,
+    .rec-panel {
+        border-radius: 0;
+    }
+    .panel-head h3 {
+        font-size: 20px;
+    }
+    .getRec {
+        margin: 0 auto;
+        padding: 1px 0 10px;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .entries {
+        margin: 0 0 25px 0;
+    }
+    .entry {
+        margin: 0;
+        padding: 10px 0 15px 0;
+    }
+    .entry h4 {
+        float: none;
+    }
+    .category {
+        margin: 0;
+        float: none;
+    }
+}

@@ -1,0 +1,79 @@
+<!--
+AskBox view #1  
+-->
+
+<a href="#/">
+    My Askbox
+</a>
+
+<div class="row">
+
+    <!-- First Column -->
+    <div class="col-md-9">
+        <div class="entries row">
+          
+            <div ng-repeat="myEntry in myEntries" class="fade">
+                <div class="entry col-md-12">
+
+                    <div class="entry-head"></div>
+                    <div class="entry-body">
+                        <h4>
+                            <a href="#/home/{{$index}}">
+                               {{ myEntry.subject }}
+                            </a>
+                        </h4>
+
+                        <span class="close spin">
+                            <i class="fa fa-times" aria-hidden="true" ng-click="removeEntry($index)"></i>
+                        </span>
+
+                        <span class="category">
+                            <small> {{ myEntry.category }} </small>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Side Panel -->
+    <div class="side-panel col-md-3">
+        <div class="row">
+           
+            <div class="rec-panel col-md-12">
+                <div class="getRec">
+                    <form ng-submit="addEntry()">
+                        <h3> Ask For Suggestions </h3>
+                        <hr />
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control" placeholder="Name your new entry" ng-model="subject" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select class="form-control" ng-model="category">
+                                <option>movies</option>
+                                <option>books</option>
+                                <option>tv shows</option>
+                                <option>Games</option>
+                                <option>Misc.</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" rows="3" placeholder="Get specific" ng-model="desc"> </textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Ask</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
